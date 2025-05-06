@@ -1,0 +1,19 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "api/process.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/process",
+            "dest": "api/process.py"
+        },
+        {
+            "src": "/",
+            "dest": "api/process.py"
+        }
+    ]
+}
